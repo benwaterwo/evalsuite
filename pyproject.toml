@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "benwaterwo-evalsuite"
+version = "0.1.0"
+description = "把多份评测组合成套件，标出覆盖缺口与重复评测项"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "benwaterwo" }]
+keywords = ["cli", "analysis", "observability", "evaluation"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://benwaterwo.github.io"
+Repository = "https://github.com/benwaterwo/evalsuite"
+Issues = "https://github.com/benwaterwo/evalsuite/issues"
+
+[project.scripts]
+evalsuite = "evalsuite:main"
+
+[tool.setuptools]
+py-modules = ["evalsuite"]
